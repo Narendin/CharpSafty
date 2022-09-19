@@ -7,12 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CardStorageService.Abstractions\CardStorageService.Abstractions.csproj" />
     <ProjectReference Include="..\CardStorageService.Core\CardStorageService.Core.csproj" />
-    <ProjectReference Include="..\CardStorageService.Data\CardStorageService.Data.csproj" />
+    <ProjectReference Include="..\CardStorageServise.Data.MSSQL\CardStorageServise.Data.MSSQL.csproj" />
   </ItemGroup>
 
 </Project>
